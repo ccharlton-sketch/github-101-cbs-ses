@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GitHub 101 (Story Edition) — Slide Deck",
+  title: "GitHub 101 (Story Edition): Slide Deck",
   description: "GitHub basics for Solutions Engineers, told through a real story",
 };
 
