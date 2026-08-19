@@ -1,12 +1,10 @@
-import { FolderGit2, PackageCheck, GitBranch, GitCommit, ArrowUpFromLine, GitPullRequest } from "lucide-react";
+import { FolderGit2, PackageCheck, GitCommit, ArrowUpFromLine } from "lucide-react";
 
 const STEPS = [
   { icon: FolderGit2, label: "Repo" },
-  { icon: PackageCheck, label: "Clone" },
-  { icon: GitBranch, label: "Branch" },
   { icon: GitCommit, label: "Commit" },
   { icon: ArrowUpFromLine, label: "Push" },
-  { icon: GitPullRequest, label: "Merge" },
+  { icon: PackageCheck, label: "Clone" },
 ];
 
 function ConclusionIllustration() {
@@ -43,7 +41,7 @@ export function SlideConclusion() {
       <div>
         <h1 className="text-5xl font-bold mb-6 text-gray-900">Now, Let's See It Live</h1>
         <p className="text-xl text-gray-700 mb-10">
-          That's the whole story: a repo to hold the project, a clone to get a copy, a branch to edit safely, a commit to save the work, a push to send it back, and a merge to make it official.
+          That's the whole story: a repo to hold the project, commits to save your work, a push to send it to GitHub, and a clone to get it back onto any machine when you need to.
         </p>
 
         <div className="p-8 bg-gradient-to-r from-[#032D60] to-[#0176D3] rounded-xl text-white">

@@ -2,25 +2,27 @@
 
 import { useState, useEffect } from "react";
 import { SlideHero } from "./_slides/slide-hero";
+import { SlideQuizStorage } from "./_slides/slide-quiz-storage";
+import { SlideQuizCollaborate } from "./_slides/slide-quiz-collaborate";
+import { SlideQuizUndo } from "./_slides/slide-quiz-undo";
 import { SlideStory } from "./_slides/slide-story";
 import { SlideRepo } from "./_slides/slide-repo";
-import { SlideClone } from "./_slides/slide-clone";
-import { SlideBranch } from "./_slides/slide-branch";
 import { SlideCommit } from "./_slides/slide-commit";
 import { SlidePush } from "./_slides/slide-push";
-import { SlideMerge } from "./_slides/slide-merge";
+import { SlideClone } from "./_slides/slide-clone";
 import { SlideConclusion } from "./_slides/slide-conclusion";
 import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
 
 const slides = [
   { id: "hero", title: "Title", component: SlideHero },
+  { id: "quiz-storage", title: "Quiz 1", component: SlideQuizStorage },
+  { id: "quiz-collaborate", title: "Quiz 2", component: SlideQuizCollaborate },
+  { id: "quiz-undo", title: "Quiz 3", component: SlideQuizUndo },
   { id: "story", title: "The Story", component: SlideStory },
   { id: "repo", title: "Repo", component: SlideRepo },
-  { id: "clone", title: "Clone", component: SlideClone },
-  { id: "branch", title: "Branch", component: SlideBranch },
   { id: "commit", title: "Commit", component: SlideCommit },
   { id: "push", title: "Push", component: SlidePush },
-  { id: "merge", title: "Merge", component: SlideMerge },
+  { id: "clone", title: "Clone", component: SlideClone },
   { id: "conclusion", title: "Recap & Demo", component: SlideConclusion },
 ];
 
@@ -122,7 +124,7 @@ export default function SlidesDeck() {
         )}
         {/* Slide Content - FIXED HEIGHT NO SCROLL */}
         <div className="flex-1 relative overflow-hidden">
-          <div className={`absolute inset-0 ${currentSlide % 2 === 1 ? "bg-amber-50/40" : "bg-white"}`}>
+          <div className={`absolute inset-0 ${currentSlide % 2 === 1 ? "bg-amber-50/40" : "bg-sky-50"}`}>
             <CurrentComponent />
           </div>
         </div>

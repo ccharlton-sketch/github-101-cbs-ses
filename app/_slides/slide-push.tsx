@@ -39,9 +39,9 @@ function PushIllustration() {
 }
 
 const CHECKLIST = [
-  { label: "My branch goes up:", text: "Uploads my commits to the shared repo." },
-  { label: "They can see the change:", text: "My teammate reviews it on their own time." },
-  { label: "It's ready to review:", text: "The change is sitting on GitHub, waiting on my teammate." },
+  { label: "My commits go up:", text: "Uploads everything I've saved locally to GitHub." },
+  { label: "Backed up for real:", text: "If my laptop dies now, nothing is lost." },
+  { label: "Ready to share:", text: "Anyone I want to show the project to just needs a link." },
 ];
 
 export function SlidePush() {
@@ -49,10 +49,10 @@ export function SlidePush() {
     <div className="h-full grid grid-cols-2 gap-16 px-16 py-16 items-center">
       <div>
         <h1 className="text-5xl font-bold mb-6 text-gray-900">
-          <span className="text-[#0176D3]">Push</span>: Sending My Change Back
+          <span className="text-[#0176D3]">Push</span>: Sending It Back to GitHub
         </h1>
         <p className="text-xl text-gray-700 mb-8">
-          Push sends my edit back to the shared project. My teammate can see it, and nobody had to be in the room while I made it.
+          Push sends my commits from my laptop up to the repo on GitHub. This is the step that actually makes the work safe and shareable, not just saved.
         </p>
 
         <div className="space-y-6">
@@ -70,7 +70,7 @@ export function SlidePush() {
 
         <div className="mt-10 rounded-lg border-l-4 border-l-[#0176D3] bg-gray-50 p-5">
           <p className="text-lg text-gray-800">
-            My work is off my machine and on GitHub. Next: getting it into the real project.
+            Backed up. A week later, I'd find out just how much that mattered.
           </p>
         </div>
       </div>

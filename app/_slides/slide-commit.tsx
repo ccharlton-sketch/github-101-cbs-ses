@@ -34,9 +34,9 @@ function CommitIllustration() {
 }
 
 const CHECKLIST = [
-  { label: "A saved moment:", text: "Locks in exactly what I changed." },
+  { label: "A saved moment:", text: "Locks in exactly what I changed, right now." },
   { label: "A short note attached:", text: "A message describing what changed and why." },
-  { label: "A trail, not one file:", text: "Stacks right on top of theirs." },
+  { label: "A trail, not just a file:", text: "Every commit stacks on the last, so I can always step back to a version that worked." },
 ];
 
 export function SlideCommit() {
@@ -44,10 +44,10 @@ export function SlideCommit() {
     <div className="h-full grid grid-cols-2 gap-16 px-16 py-16 items-center">
       <div>
         <h1 className="text-5xl font-bold mb-6 text-gray-900">
-          <span className="text-[#0176D3]">Commit</span>: Saving My Edit
+          <span className="text-[#0176D3]">Commit</span>: Saving My Progress
         </h1>
         <p className="text-xl text-gray-700 mb-8">
-          Once my change was ready on that branch, committing saved it as a snapshot, with a note about what I did and why.
+          Committing saves a snapshot of my work, with a note about what I did and why. It's a checkpoint, saved locally, that I can always come back to.
         </p>
 
         <div className="space-y-6">
@@ -65,7 +65,7 @@ export function SlideCommit() {
 
         <div className="mt-10 rounded-lg border-l-4 border-l-[#0176D3] bg-gray-50 p-5">
           <p className="text-lg text-gray-800">
-            The moment I commit, my fix has its own record sitting right next to theirs.
+            But a commit alone still only lives on my laptop. That's what push is for.
           </p>
         </div>
       </div>

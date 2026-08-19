@@ -1,4 +1,4 @@
-import { FolderGit2, Cloud, Boxes, Users, Check } from "lucide-react";
+import { FolderGit2, Cloud, Boxes, ShieldCheck, Check } from "lucide-react";
 
 function RepoIllustration() {
   return (
@@ -10,7 +10,7 @@ function RepoIllustration() {
         <Cloud className="h-7 w-7 text-[#0176D3]" />
       </div>
       <div className="absolute top-10 right-10 w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center rotate-[6deg]">
-        <Users className="h-7 w-7 text-[#0176D3]" />
+        <ShieldCheck className="h-7 w-7 text-[#0176D3]" />
       </div>
       <div className="absolute bottom-10 right-16 w-14 h-14 rounded-2xl bg-white shadow-md flex items-center justify-center rotate-[8deg]">
         <Boxes className="h-7 w-7 text-[#DD7A5C]" />
@@ -21,7 +21,7 @@ function RepoIllustration() {
           <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center">
             <FolderGit2 className="h-9 w-9 text-[#0176D3]" />
           </div>
-          <div className="text-sm font-semibold text-gray-500">client-site repo</div>
+          <div className="text-sm font-semibold text-gray-500">demo-project repo</div>
           <div className="flex gap-2">
             <div className="w-8 h-8 rounded-full bg-blue-100" />
             <div className="w-8 h-8 rounded-full bg-orange-100" />
@@ -34,9 +34,9 @@ function RepoIllustration() {
 }
 
 const CHECKLIST = [
-  { label: "Not on one laptop:", text: "It lives on GitHub, not just on someone's machine." },
-  { label: "One project, one home:", text: "The client site gets its own repo, separate from everything else." },
-  { label: "Access opens the door:", text: "Add me to the repo, and I have a way in." },
+  { label: "Not on one laptop:", text: "It lives on GitHub's servers, not just on my machine." },
+  { label: "One project, one home:", text: "The demo gets its own repo, separate from everything else." },
+  { label: "A link, not a zip file:", text: "Anyone I share the repo with can open it instantly." },
 ];
 
 export function SlideRepo() {
@@ -65,7 +65,7 @@ export function SlideRepo() {
 
         <div className="mt-10 rounded-lg border-l-4 border-l-[#0176D3] bg-gray-50 p-5">
           <p className="text-lg text-gray-800">
-            The repo is the one thing that would have let me in at all.
+            The repo alone would have saved my project the moment my laptop was at risk.
           </p>
         </div>
       </div>

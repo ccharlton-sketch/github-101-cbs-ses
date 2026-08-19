@@ -1,4 +1,4 @@
-import { Laptop, EyeOff, PencilOff, MessageSquareOff, Check } from "lucide-react";
+import { Laptop, CloudOff, Mail, History, Check } from "lucide-react";
 
 function StoryIllustration() {
   return (
@@ -7,13 +7,13 @@ function StoryIllustration() {
       <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-orange-100/60 blur-3xl" />
 
       <div className="absolute top-8 left-8 w-14 h-14 rounded-2xl bg-white shadow-md flex items-center justify-center rotate-[-6deg]">
-        <EyeOff className="h-7 w-7 text-[#DD7A5C]" />
+        <CloudOff className="h-7 w-7 text-[#DD7A5C]" />
       </div>
       <div className="absolute top-10 right-10 w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center rotate-[6deg]">
-        <PencilOff className="h-7 w-7 text-[#DD7A5C]" />
+        <Mail className="h-7 w-7 text-[#DD7A5C]" />
       </div>
       <div className="absolute bottom-10 right-16 w-14 h-14 rounded-2xl bg-white shadow-md flex items-center justify-center rotate-[8deg]">
-        <MessageSquareOff className="h-7 w-7 text-[#DD7A5C]" />
+        <History className="h-7 w-7 text-[#DD7A5C]" />
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
@@ -23,7 +23,7 @@ function StoryIllustration() {
           </div>
           <div className="w-32 h-2 rounded-full bg-gray-200" />
           <div className="w-24 h-2 rounded-full bg-gray-200" />
-          <div className="text-sm font-semibold text-gray-500">one laptop, one person</div>
+          <div className="text-sm font-semibold text-gray-500">one laptop, one copy</div>
         </div>
       </div>
     </div>
@@ -31,18 +31,18 @@ function StoryIllustration() {
 }
 
 const CHECKLIST = [
-  { label: "Can't view it:", text: "No link to open. It only lived on their laptop." },
-  { label: "Can't edit it:", text: "No way in for me to make the change myself." },
-  { label: "Can't comment:", text: "Just a Slack message, and a wait." },
+  { label: "No backup:", text: "If this laptop died, the project died with it." },
+  { label: "No easy way to share:", text: "My only option was zipping files and emailing them." },
+  { label: "No history:", text: "If I broke something, there was no way back to a working version." },
 ];
 
 export function SlideStory() {
   return (
     <div className="h-full grid grid-cols-2 gap-16 px-16 py-16 items-center">
       <div>
-        <h1 className="text-5xl font-bold mb-6 text-gray-900">The Site I Couldn't Touch</h1>
+        <h1 className="text-5xl font-bold mb-6 text-gray-900">The Project I Almost Lost</h1>
         <p className="text-xl text-gray-700 mb-8">
-          A teammate built a client site with Claude Code. It looked great. Then I needed to change something on it.
+          I'd been building a demo for weeks. All of it lived in one folder, on one laptop. Then I needed to send it to someone, and realized I had no good way to do that.
         </p>
 
         <div className="space-y-6">
@@ -60,7 +60,7 @@ export function SlideStory() {
 
         <div className="mt-10 rounded-lg border-l-4 border-l-[#0176D3] bg-gray-50 p-5">
           <p className="text-lg text-gray-800">
-            Every fix meant pinging them and waiting until they had time to make it.
+            One dead hard drive, and weeks of work would just be gone. So I decided to fix it, before I found out the hard way.
           </p>
         </div>
       </div>

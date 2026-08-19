@@ -39,9 +39,9 @@ function CloneIllustration() {
 }
 
 const CHECKLIST = [
-  { label: "The full project:", text: "Every file and every commit, not just the latest version." },
-  { label: "On demand:", text: "Whenever I need it, without asking anyone first." },
-  { label: "Just once to start:", text: "After that, pulling grabs whatever's new since my last copy." },
+  { label: "The full project:", text: "Every file and every past commit, not just a snapshot." },
+  { label: "Onto any machine:", text: "My new laptop had never seen this project before. Didn't matter." },
+  { label: "Back to exactly where I left off:", text: "Every commit I'd made was right there, down to the last one before push." },
 ];
 
 export function SlideClone() {
@@ -49,10 +49,10 @@ export function SlideClone() {
     <div className="h-full grid grid-cols-2 gap-16 px-16 py-16 items-center">
       <div>
         <h1 className="text-5xl font-bold mb-6 text-gray-900">
-          <span className="text-[#0176D3]">Clone</span>: Getting My Own Copy
+          <span className="text-[#0176D3]">Clone</span>: The Laptop Died. The Project Didn't.
         </h1>
         <p className="text-xl text-gray-700 mb-8">
-          Clone downloads the whole project onto my machine. Not a zip file someone emailed me, the real thing.
+          A week later, my laptop actually died. I borrowed a new one, and cloned the repo, downloading the whole project from GitHub, straight onto a machine that had never touched it before.
         </p>
 
         <div className="space-y-6">
@@ -70,7 +70,7 @@ export function SlideClone() {
 
         <div className="mt-10 rounded-lg border-l-4 border-l-[#0176D3] bg-gray-50 p-5">
           <p className="text-lg text-gray-800">
-            I don't have to ask them to send me anything. I just clone it.
+            The exact disaster from the start of this talk. This time, it was a non-event.
           </p>
         </div>
       </div>
