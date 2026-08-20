@@ -124,7 +124,7 @@ export default function SlidesDeck() {
         )}
         {/* Slide Content - FIXED HEIGHT NO SCROLL */}
         <div className="flex-1 relative overflow-hidden">
-          <div className={`absolute inset-0 ${currentSlide % 2 === 1 ? "bg-amber-50/40" : "bg-sky-50"}`}>
+          <div className={`absolute inset-0 ${currentSlide % 2 === 1 ? "bg-amber-50/40" : "bg-red-50"}`}>
             <CurrentComponent />
           </div>
         </div>
